@@ -94,9 +94,6 @@ function getButtonGroups(gd, buttonsToRemove, buttonsToAdd) {
         groups.push(out);
     }
 
-    // buttons common to all plot types
-    addGroup(['toImage', 'sendDataToCloud']);
-
     // graphs with more than one plot types get 'union buttons'
     // which reset the view or toggle hover labels across all subplots.
     if((hasCartesian || hasGL2D || hasPie || hasTernary) + hasGeo + hasGL3D > 1) {
